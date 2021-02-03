@@ -5,7 +5,7 @@
 
 
   <div class="row justify-content-center my-5">
-  <div class="col-6 ">
+  <div class="col-md-6 col-xs-10 ">
 
       <img  class ='profile_img'src="{%static 'portfolio/images/pic1.jpg'%}" alt="">
 
@@ -13,7 +13,7 @@
 </div>
 </div>
 <div class="row justify-content-center my-5">
-  <div class="col-8">
+  <div class="col-md-8 col-xs-12">
     <div class="container text-center">
   <h1 id="aboutMe">Usama is a Computer Science student at Mansour University</h1>
 </div>
@@ -32,7 +32,7 @@
 
       <div id="row" class="row ">
         {% for project in projects%}
-          <div class="col-4 ">
+          <div class="col-md-4 col-xs-8 ">
 
             <div class="col-12 ">
             <a  href="{{project.url}}"><img id="imgPro" class="img-fluid "src="{{project.image.url}}" class="img-fluid pull-xs-left" alt="..."></a>
