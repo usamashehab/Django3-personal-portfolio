@@ -123,6 +123,10 @@ STATIC_URL = '/static/'
 # STATICFILES_DIRS = [
 #     STATIC_DIR,
 # ]
-STATIC_ROOT=os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+try:
+    from .local_settings import *
+except ImportError:
+    print("no local_setting to import")

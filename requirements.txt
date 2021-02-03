@@ -1,0 +1,14 @@
+asgiref @ file:///tmp/build/80754af9/asgiref_1605055780383/work
+certifi==2020.12.5
+Django @ file:///tmp/build/80754af9/django_1609784082548/work
+django-faker==0.2
+fake-factory==9999.9.9
+Faker==5.8.0
+Pillow==8.1.0
+psycopg2 @ file:///C:/ci/psycopg2_1608147654043/work
+python-dateutil==2.8.1
+pytz @ file:///tmp/build/80754af9/pytz_1608922264688/work
+six==1.15.0
+sqlparse @ file:///tmp/build/80754af9/sqlparse_1602184451250/work
+text-unidecode==1.3
+wincertstore==0.2
