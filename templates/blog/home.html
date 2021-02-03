@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+{%block content%}
+    <div class="container"><br><br>
+      <h1 id="blogCount"class="text-center my-6">usama has written {{blogs.count}} blog{{blogs.count|pluralize}}</h1>
+      <br><br>
+      {%for blog in blogs%}
+      <a href="{% url "blog:article" blog.id%} "class=" text-decoration-none" > <h4>{{blog.title}}</h4></a>
+      <p class="text-muted">{{blog.date|date:'M d Y'}}</p>
+      <p>{{blog.article|striptags|truncatechars:100}}</p>
+      {%endfor%}
+{%endblock%}

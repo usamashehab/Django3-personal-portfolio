@@ -1,0 +1,16 @@
+
+{%extends 'base.html'%}
+{%block content%}
+
+  <!-- <div class="container w-80 "> -->
+    <h2 id="articleTitle"class="text-center my-5">{{article.title}}</h2>
+        <div class="jumbotron mx-5">
+
+
+              <p class="text-muted"> {{article.date|date:'M D Y'}}</p>
+
+          {{article.article|safe}}
+          </div>
+        <!-- </div> -->
+    </div>
+{%endblock%}
