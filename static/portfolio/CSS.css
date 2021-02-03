@@ -26,6 +26,7 @@ body {
   height:400px;
 }
 #titlePro{
+    margin-top:20px;
   height: 150px
 }
 #imgPro{
@@ -33,4 +34,5 @@ body {
   width: 100%
 margin :auto;
 margin-right: auto;
+margin-bottom:30px;
 }
