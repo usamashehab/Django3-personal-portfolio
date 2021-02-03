@@ -5,7 +5,7 @@
 
 
   <div class="row justify-content-center my-5">
-  <div class="col-6 img-thumbnail">
+  <div class="col-6 ">
 
       <img  class ='profile_img'src="{%static 'portfolio/images/pic1.jpg'%}" alt="">
 
@@ -25,19 +25,25 @@
     <div class="container text-center">
       {{personal_description}}
     </div>
-    <div class="container w-75">
+
+    <div class="container w-80">
+        <h1>Portfolio</h1>
+        <hr>
+
       <div id="row" class="row ">
         {% for project in projects%}
-          <div class="col-4 img-thumbnail">
+          <div class="col-4 ">
+
+            <div class="col-12 ">
+            <a  href="{{project.url}}"><img id="imgPro" class="img-fluid "src="{{project.image.url}}" class="img-fluid pull-xs-left" alt="..."></a>
+            </div>
+            <br>
             <div id="titlePro" class="col-12">
 
 
             <h2>{{project.title}}</h2>
             <p>{{project.description}}</p>
                 </div>
-            <div class="col-12 ">
-            <a  href="{{project.url}}"><img id="imgPro" class="img-fluid "src="{{project.image.url}}" class="img-fluid pull-xs-left" alt="..."></a>
-            </div>
               </div>
         {% endfor%}
 
